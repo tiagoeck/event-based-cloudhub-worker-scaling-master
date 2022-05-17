@@ -1,0 +1,23 @@
+http:
+ private:  
+  port: "8091"
+ request:
+  host: "anypoint.mulesoft.com"
+  port: "443"
+  maxConnections: "-1"
+  responsebuffersize: "1024"
+  connection: "30000"
+  timeouts: ""
+  idle: "3000"
+  response: "30000"
+  applications:
+   path: "/cloudhub/api/v2/applications/"
+  token:
+   path: "/accounts/api/v2/oauth2/token"
+   url: "https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token"
+
+https:
+ port: "8082"
+ private:
+  port: "8092"
+
